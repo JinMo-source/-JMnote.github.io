@@ -5,6 +5,10 @@ module.exports = {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
+    path: {
+      content: "/contents",
+      contact: "/contact",
+    },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {

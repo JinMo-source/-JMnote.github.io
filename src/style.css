@@ -142,6 +142,9 @@ h5 {
 
 h6 {
   font-size: var(--fontSize-1);
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+  line-height: var(--lineHeight-tight);
 }
 
 h1 > a {
@@ -252,7 +255,8 @@ a:focus {
 }
 
 .global-header {
-  margin-bottom: var(--spacing-20);
+  margin-left: var(--spacing-5);
+  margin-bottom: var(--spacing-5);
 }
 
 .main-heading {
@@ -337,4 +341,27 @@ a:focus {
 .logo {
   position: absolute;
   top: 0;
+}
+
+.introduce {
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 3px;
+  padding: var(--spacing-4);
+}
+.intro-tags {
+  margin-left: var(--spacing-6);
+}
+.introduce > li > article {
+  margin-bottom: var(--spacing-6);
+}
+
+.front-stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.front-stack > li {
+  width: 25%;
+  height: 30px;
 }
