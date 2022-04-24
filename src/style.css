@@ -200,6 +200,23 @@ li > ul {
   margin-top: calc(var(--spacing-8) / 2);
 }
 
+li {
+  padding: 0 var(--spacing-4);
+  list-style: none;
+}
+li > a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f59000;
+}
+
 blockquote {
   color: var(--color-text-light);
   margin-left: calc(-1 * var(--spacing-6));
@@ -255,17 +272,21 @@ a:focus {
 }
 
 .global-header {
-  margin-left: var(--spacing-5);
-  margin-bottom: var(--spacing-5);
+  height: 80px;
+  margin-bottom: var(--spacing-1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .main-heading {
   position: relative;
   font-size: var(--fontSize-7);
+  padding-top: var(--spacing-2);
   margin: 0;
 }
 
 .post-list-item {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: var(--spacing-4);
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
 }
@@ -294,9 +315,12 @@ a:focus {
 
 .bio {
   display: flex;
-  margin-bottom: var(--spacing-16);
+  max-height: 550px;
 }
 
+.sectionImage {
+  width: 100%;
+}
 .bio p {
   margin-bottom: var(--spacing-0);
 }
@@ -340,7 +364,17 @@ a:focus {
 
 .logo {
   position: absolute;
-  top: 0;
+  top: 15px;
+  left: 15px;
+}
+.main-nav {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 50vw;
+  font-size: var(--fontSize-4);
+  margin-left: -12.5vw;
+  padding: var(--spacing-4);
 }
 
 .introduce {
@@ -362,6 +396,8 @@ a:focus {
 }
 
 .front-stack > li {
-  width: 25%;
-  height: 30px;
+  width: 15%;
+}
+.stackImg {
+  width: 100%;
 }

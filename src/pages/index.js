@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -13,7 +14,6 @@ const BlogIndex = ({ data, location }) => {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="All posts" />
-        <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -22,11 +22,10 @@ const BlogIndex = ({ data, location }) => {
       </Layout>
     )
   }
-
+  console.log(posts)
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <Bio />
       <div>
         <h1>INTRODUCE</h1>
         <ol style={{ listStyle: `none` }} className="introduce">
@@ -66,7 +65,15 @@ const BlogIndex = ({ data, location }) => {
         </ol>
         <h1>Front-End Stack</h1>
         <ol className="front-stack">
-          <li>1</li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/HTMLLOGO.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
           <li>1</li>
           <li>1</li>
           <li>1</li>
@@ -77,6 +84,7 @@ const BlogIndex = ({ data, location }) => {
         </ol>
       </div>
       <h1 className="post-title">Note</h1>
+
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
