@@ -74,13 +74,60 @@ const BlogIndex = ({ data, location }) => {
               alt="Stack Logo"
             />
           </li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/CSSLOGO.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/JAVASCRIPTLOGO.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/TYPESCRIPT.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/REACTLOGO.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/styled.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
+          <li>
+            <StaticImage
+              className="stackImg"
+              src="../images/BABELLOGO.png"
+              formats={["auto", "webp", "avif"]}
+              quality={95}
+              alt="Stack Logo"
+            />
+          </li>
         </ol>
       </div>
       <h1 className="post-title">Note</h1>

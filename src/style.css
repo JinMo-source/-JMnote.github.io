@@ -264,7 +264,7 @@ a:focus {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
+  padding: var(--spacing-1) var(--spacing-5);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -273,7 +273,7 @@ a:focus {
 
 .global-header {
   height: 80px;
-  margin-bottom: var(--spacing-1);
+  /* margin-bottom: var(--spacing-1); */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -396,7 +396,11 @@ a:focus {
 }
 
 .front-stack > li {
-  width: 15%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 0 var(--spacing-1) var(--spacing-1) 0;
+  padding: 0;
+  width: 19.4999%;
 }
 .stackImg {
   width: 100%;
