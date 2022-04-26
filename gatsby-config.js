@@ -1,4 +1,8 @@
 module.exports = {
+  pathPrefix: "/JMnote.github.io",
+  flags: {
+    PARALLEL_QUERY_RUNNING: true,
+  },
   siteMetadata: {
     title: `JM's Note`,
     menuLink: [
@@ -12,6 +16,7 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     `gatsby-plugin-image`,
     {
